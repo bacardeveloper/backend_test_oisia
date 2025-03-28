@@ -19,7 +19,7 @@ API REST développée avec Node.js et Express.js pour le test technique Oisia. C
 
 1. Cloner le repository
 ```bash
-git clone https://github.com/votre-username/backend_test_oisia.git
+git clone https://github.com/bacardeveloper/backend_test_oisia.git
 cd backend_test_oisia
 ```
 
