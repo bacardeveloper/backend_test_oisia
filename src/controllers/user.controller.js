@@ -19,7 +19,7 @@ class UserCtrl {
                 return res.status(404).json({ message: "l'utilisateur n'existe pas" })
             }
         } catch (err) {
-            logger.error("Erreur critique !");
+            logger.error("Erreur critique : ");
             return res.status(500).json({ message: "Erreur backend" })  
         }
     }
