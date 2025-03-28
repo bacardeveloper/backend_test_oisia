@@ -3,7 +3,6 @@ const logger = require("../utils/logger");
 
 class UserCtrl {
 
-<<<<<<< HEAD
     static async getUser(req, res) {
         logger.warn(req.body);
         
@@ -25,8 +24,7 @@ class UserCtrl {
         }
     }
 
-=======
->>>>>>> dev
+
     static async saveUser(req, res) {
         try {
             const { status, message } = await findUserByEmail(req.body.email);
