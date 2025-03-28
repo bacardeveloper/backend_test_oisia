@@ -5,7 +5,10 @@ const logger = pino({
     level: "info", // Niveau de log : debug, info, warn, error
     transport: {
         target: "pino-pretty", // Permet un affichage formaté en dev
-        options: { colorize: true },
+        options: {
+            colorize: true, destination: './logs/app.log',
+            mkdir: true
+        },
     },
 });
 

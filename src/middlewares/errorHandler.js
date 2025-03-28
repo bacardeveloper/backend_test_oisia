@@ -1,3 +1,5 @@
+const logger = require('../utils/logger');
+
 // Custom API Error class for standardized error handling
 class ApiError extends Error {
     constructor(statusCode, message) {
@@ -17,6 +19,7 @@ console.log(error.statusCode);
 
 // Global error handling middleware
 const errorHandler = (err, req, res, next) => {
+    logger.error(err);
     err.statusCode = err.statusCode || 500;
     err.status = err.status || 'error';
     if (process.env.NODE_ENV === 'development') {
